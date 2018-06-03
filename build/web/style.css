@@ -1,0 +1,141 @@
+body, html {
+    height: 100%;
+    min-height:100%;
+}
+
+#main-container-index
+{
+    background-image: url("img/tlo.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.alert {
+    display:inline-block;
+}
+
+#main-container
+{
+
+    min-height: 80%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3em; 
+    padding-bottom: 2em;
+}
+
+#footer{
+    width: 100%;
+    padding:2em;
+    color:rgb(240,240,240);    
+    position: absolute;
+    background-color: rgb(22,22,16);  
+    text-align: center;  
+}
+
+#main-container-index .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+#main-container-index .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 1em;
+    margin:2em;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+
+h1,h2,h3,h4 {
+    color: black;
+}
+
+#header-logo{
+
+    max-width:4em;
+}
+
+#zalogowano{
+    position: fixed;
+    top: 0px;
+    left: 1100px;
+    right: 0px;
+    height: 30px;
+}
+
+#repertuar{
+    position: fixed;
+    top: 80px;
+    left: 650px;
+    right: 0px;
+    height: 30px;  
+    background-color: #ffcc33
+}
+
+#logout{
+    position: fixed;
+    top: 0px;
+    left: 1300px;
+    right: 0px;
+    height: 30px;
+}
+
+
+.poster {
+    width: 200px; /* You can set the dimensions to whatever you want */
+    height: 200px;
+    object-fit: cover;
+}
+
+#repertuarTabela
+{
+
+
+}
+
+#gallery {
+  width: 604px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; 
+}
+
+#navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+#navigation li {
+  padding: 0;
+  margin: 0;
+  float: left;
+  clear: both;
+}
+
+#navigation li a img {
+  display: block;
+  border: none;
+}
+
+#navigation li a {
+  display: block;
+}
+
+#full-picture {
+  width: 500px;
+  height: 375px;
+  overflow: hidden;
+  float: left;
+}
