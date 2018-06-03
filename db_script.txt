@@ -1,0 +1,24 @@
+--Tworzenie bazy danych
+create database kino;
+use kino;
+
+--Tabela users
+create table users(iduser int not null auto_increment,first_name varchar(20),last_name varchar(20),username varchar(20) not null,password varchar(100) not null,email varchar(20),primary key(iduser));
+
+--Tabela repertuarr
+create table repertuarr(idrepertuar int not null auto_increment,tytul varchar(50),opis varchar(250),godziny varchar(50),biletynorm int(3),biletyulg int(3), img BLOB, primary key(idrepertuar));
+
+--Tabela rezerwacja
+create table rezerwacja(idrezerwacja int not null auto_increment, imie varchar(50), nazwisko varchar(50),tytul varchar(50),godzina varchar(50),biletynorm int(3),biletyulg int(3),nazwauzytkownika varchar(30), primary key(idrezerwacja));
+
+ALTER TABLE rezerwacja
+ADD iduser INT;
+
+ALTER TABLE rezerwacja
+ADD FOREIGN KEY (iduser) REFERENCES users(iduser);
+
+
+--Tabela rezerwacja
+create table kontakt(idkontakt int not null auto_increment, imie varchar(50),email varchar(50),wiadomosc varchar(250), primary key(idkontakt));
+
+--@01.06.18
